@@ -62,13 +62,13 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fnt_1</font>
     <font>fonts\fnt_title_screen</font>
   </fonts>
   <objects name="objects">
     <objects name="Presentation and Menus">
+      <object>objects\obi_boot_load</object>
       <object>objects\obj_esc_title</object>
       <object>objects\obj_quit_title</object>
       <objects name="Pretitle">
