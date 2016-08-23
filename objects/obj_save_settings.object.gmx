@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="7" enumb="5">
+    <event eventtype="9" enumb="27">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>///save the audio settings
 ini_open( 'savedata.ini' );
-ini_write_real( 'options', 'musicvolume', musicvolume );
-ini_write_real( 'options', 'effectvolume', effectvolume );
+ini_write_real( 'options', 'musicvolume', global.musicvolume );
+ini_write_real( 'options', 'effectvolume', global.effectvolume );
 ini_close()
 </string>
           </argument>

@@ -25,17 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (effectvolume &lt;= 1) &amp;&amp; (effectvolume &gt;= 0.61)
+            <string>if (global.effectvolume &lt;= 1) &amp;&amp; (global.effectvolume &gt;= 0.61)
 { 
     draw_sprite (spr_volume_level3, 0, x, y);
 }
 
-if (effectvolume &lt;= 0.60) &amp;&amp; (effectvolume &gt;= 0.31)
+if (global.effectvolume &lt;= 0.60) &amp;&amp; (global.effectvolume &gt;= 0.31)
 {
     draw_sprite (spr_volume_level2, 0, x, y);
 }
 
-if (effectvolume &lt;= 0.30) &amp;&amp; (effectvolume &gt;= 0)
+if (global.effectvolume &lt;= 0.30) &amp;&amp; (global.effectvolume &gt;= 0)
 {
     draw_sprite (spr_volume_level1, 0, x, y);
 }

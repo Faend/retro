@@ -100,7 +100,6 @@
         </objects>
         <object>objects\obj_newgameintro</object>
         <objects name="Options">
-          <object>objects\obj_titlescreen_music</object>
           <object>objects\obj_music_txt</object>
           <object>objects\obj_music_level_up</object>
           <object>objects\obj_music_level_down</object>

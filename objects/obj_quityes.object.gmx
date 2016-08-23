@@ -53,8 +53,8 @@
             <kind>1</kind>
             <string>///save the audio settings
 ini_open( 'savedata.ini' );
-ini_write_real( 'options', 'musicvolume', musicvolume );
-ini_write_real( 'options', 'effectvolume', effectvolume );
+ini_write_real( 'options', 'musicvolume', global.musicvolume );
+ini_write_real( 'options', 'effectvolume', global.effectvolume );
 ini_close()
 </string>
           </argument>

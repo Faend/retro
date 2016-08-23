@@ -57,7 +57,7 @@
     <instance objName="obj_b_credits" x="1228" y="468" name="inst_6AEF2C96" locked="0" code="" scaleX="0.409999996423721" scaleY="0.362637370824814" colour="4294967295" rotation="0"/>
     <instance objName="obj_b_quit" x="1230" y="506" name="inst_61B4F696" locked="0" code="" scaleX="0.411458343267441" scaleY="0.310000002384186" colour="4294967295" rotation="0"/>
     <instance objName="obj_b_continue" x="788" y="426" name="inst_D015B908" locked="0" code="" scaleX="0.426267266273499" scaleY="0.370000004768372" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="382" y="296" name="inst_F2EE0F48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_quit_title" x="354" y="254" name="inst_FC314979" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
