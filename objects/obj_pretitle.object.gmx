@@ -49,7 +49,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_titlescreen_music,1,1)
+            <string>audio_sound_gain(snd_titlescreen_music,global.musicvolume,1)
+audio_sound_gain(snd_selection,global.effectvolume,1)
+audio_play_sound(snd_titlescreen_music,1,1);
 </string>
           </argument>
         </arguments>
