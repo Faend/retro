@@ -64,6 +64,7 @@
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fnt_1</font>
+    <font>fonts\fnt_title_screen</font>
   </fonts>
   <objects name="objects">
     <objects name="Player">
