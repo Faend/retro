@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///save the audio settings
-ini_open( 'savedata.ini' );
+ini_open( 'settings.ini' );
 ini_write_real( 'options', 'musicvolume', global.musicvolume );
 ini_write_real( 'options', 'effectvolume', global.effectvolume );
 ini_close()

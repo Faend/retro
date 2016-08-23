@@ -68,11 +68,6 @@
     <font>fonts\fnt_title_screen</font>
   </fonts>
   <objects name="objects">
-    <objects name="Player">
-      <object>objects\obj_player</object>
-      <object>objects\obj_wall</object>
-      <object>objects\obj_box</object>
-    </objects>
     <objects name="Presentation and Menus">
       <object>objects\obj_esc_title</object>
       <object>objects\obj_quit_title</object>
@@ -117,6 +112,8 @@
   <rooms name="rooms">
     <rooms name="Presentation and Menus">
       <room>rooms\rm_boot</room>
+      <room>rooms\rm_placeholder</room>
+      <room>rooms\rm_first_level</room>
       <rooms name="Titlescreen">
         <room>rooms\rm_titlescreen</room>
         <room>rooms\rm_quitcheck</room>
@@ -126,9 +123,7 @@
           <room>rooms\rm_options</room>
         </rooms>
       </rooms>
-      <room>rooms\rm_placeholder</room>
     </rooms>
-    <room>rooms\rm_first_level</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

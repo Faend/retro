@@ -11,28 +11,19 @@
   <colour>0</colour>
   <showcolour>-1</showcolour>
   <code>///load settings
-ini_open('savedata.ini');
+ini_open('settings.ini');
 if (ini_key_exists('options', 'musicvolume'))
    {
-global.musicvolume = ini_read_real('options', 'musicvolume', 0);
+global.musicvolume = ini_read_real('options', 'musicvolume', 1);
 }
-else 
-    {
-    global.musicvolume = 1;
-    }
 
-if (ini_key_exists('options', 'name'))
+
+if (ini_key_exists('options', 'effectvolume'))
 {
-    global.effectvolume = ini_read_real( 'options', 'effectvolume', 0);
-}
-  else 
-{
-    global.effectvolume = 1;
+global.effectvolume = ini_read_real( 'options', 'effectvolume', 1);
 }
 
-ini_close()
-
-audio_play_sound(snd_titlescreen_music, 1, 1);</code>
+ini_close()</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
