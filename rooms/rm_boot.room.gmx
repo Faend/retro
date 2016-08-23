@@ -10,11 +10,21 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>globalvar musicvolume;
-musicvolume = 1;
+  <code>///load settings
+ini_open('savedata.ini');
+if !ini_key_exists('options', 'musicvolume')
+   {
+   musicvolume = 1;
+   else musicvolume = ini_read_real( 'options', 'musicvolume', musicvolume );
+   }
+   
+if !ini_key_exists('options', 'name')
+   {
+   effectvolume = 1;
+   else effectvolume = ini_read_real( 'options', 'effectvolume', effectvolume );
+   }
 
-globalvar effectvolume;
-effectvolume = 1;</code>
+ini_close()</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

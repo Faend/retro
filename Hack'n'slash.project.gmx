@@ -62,6 +62,7 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fnt_1</font>
     <font>fonts\fnt_title_screen</font>
@@ -74,6 +75,7 @@
     </objects>
     <objects name="Presentation and Menus">
       <object>objects\obj_esc_title</object>
+      <object>objects\obj_quit_title</object>
       <objects name="Pretitle">
         <object>objects\obj_pretitle</object>
       </objects>
@@ -107,6 +109,7 @@
           <object>objects\obj_soundeffect_up</object>
           <object>objects\obj_soundeffect_down</object>
           <object>objects\obj_soundeffect_level</object>
+          <object>objects\obj_save_settings</object>
         </objects>
       </objects>
       <object>objects\obj_newgame_gif</object>
