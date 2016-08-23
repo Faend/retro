@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1920</width>
   <height>1080</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bkg_title_screen" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -52,14 +52,12 @@
   </views>
   <instances>
     <instance objName="obj_esc_title" x="64" y="32" name="inst_4B7B1E8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_music_txt" x="608" y="416" name="inst_3DC7C8BC" locked="0" code="" scaleX="2.2147650718689" scaleY="2.6896550655365" colour="4294967295" rotation="0"/>
-    <instance objName="obj_soundeffect_txt" x="608" y="672" name="inst_D88E6764" locked="0" code="" scaleX="2.1800000667572" scaleY="2.51724147796631" colour="4294967295" rotation="0"/>
-    <instance objName="obj_music_level_up" x="1376" y="416" name="inst_E1C3A9ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_music_level_down" x="928" y="416" name="inst_555D84EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_soundeffect_up" x="1376" y="672" name="inst_3D56FA0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_soundeffect_down" x="928" y="672" name="inst_E36E23D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_music_level" x="1152" y="352" name="inst_69191231" locked="0" code="" scaleX="2.5" scaleY="2.16666674613953" colour="4294967295" rotation="0"/>
-    <instance objName="obj_soundeffect_level" x="1152" y="608" name="inst_D35215B4" locked="0" code="" scaleX="2.5" scaleY="2.16666674613953" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_level_up" x="928" y="480" name="inst_E1C3A9ED" locked="0" code="" scaleX="0.666666686534882" scaleY="0.666666686534882" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_level_down" x="640" y="480" name="inst_555D84EB" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_soundeffect_up" x="1360" y="480" name="inst_3D56FA0D" locked="0" code="" scaleX="0.579999983310699" scaleY="0.505154609680176" colour="4294967295" rotation="0"/>
+    <instance objName="obj_soundeffect_down" x="1088" y="480" name="inst_E36E23D7" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_music_level" x="784" y="464" name="inst_69191231" locked="0" code="" scaleX="1.22105264663696" scaleY="0.958333313465118" colour="4294967295" rotation="0"/>
+    <instance objName="obj_soundeffect_level" x="1224" y="464" name="inst_D35215B4" locked="0" code="" scaleX="1.32631576061249" scaleY="1.03125" colour="4294967295" rotation="0"/>
     <instance objName="obj_save_settings" x="192" y="64" name="inst_56F6B45C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
