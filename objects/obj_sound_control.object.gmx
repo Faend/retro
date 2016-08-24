@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="7" enumb="2">
+    <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,17 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///load settings
-globalvar musicvolume;
-globalvar effectvolume;
-
-ini_open( 'settings.ini' );
-
-musicvolume = ini_read_real( 'options', 'musicvolume', 1);
-effectvolume = ini_read_real( 'options', 'effectvolume', 1);
- 
-ini_close();
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

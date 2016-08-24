@@ -101,6 +101,7 @@
           <object>objects\obj_soundeffect_down</object>
           <object>objects\obj_soundeffect_level</object>
           <object>objects\obj_save_settings</object>
+          <object>objects\obj_sound_control</object>
         </objects>
       </objects>
       <object>objects\obj_newgame_gif</object>
