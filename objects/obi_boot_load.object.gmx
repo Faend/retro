@@ -26,25 +26,20 @@
           <argument>
             <kind>1</kind>
             <string>///load settings
-globalvar musicvolume;
-musicvolume = 1
-globalvar effectvolume;
-effectvolume = 1
 
-/*
 ini_open( 'settings.ini' )
 
 //check for music
 if (ini_key_exists('options', 'musicvol'))
 {
-    global.musicvolume = ini_read_real( 'options', 'musicvolume', 1)}
-        else {global.musicvolume = 1;}
+    musicvolume = ini_read_real( 'options', 'musicvolume', 1)}
+        else {musicvolume = 1;}
 
 //check for effects 
 if (ini_key_exists('options', 'effectvolume'))
 {
-    global.effectvolume = ini_read_real( 'options', 'effectvolume', 1)}
-        else {global.effectvolume = 1;}
+    effectvolume = ini_read_real( 'options', 'effectvolume', 1)}
+        else {effectvolume = 1;}
     
 //
 ini_close()
