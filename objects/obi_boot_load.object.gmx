@@ -30,14 +30,12 @@ globalvar musicvolume;
 globalvar effectvolume;
 
 ini_open( 'settings.ini' );
-if (ini_key_exists('options', 'musicvolume'))
+if (ini_key_exists('options', 'musicvolume') &amp;&amp; ini_key_exists('options', 'effectvolume'))
 {
-musicvolume = ini_read_real( 'options', 'musicvolume', 1);
-    if (ini_key_exists('options', 'effectvolume'))
-        {
+        musicvolume = ini_read_real( 'options', 'musicvolume', 1);
         effectvolume = ini_read_real( 'options', 'effectvolume', 1);
-        }
 }
+
 ini_close();
 
 globalvar mvol;
@@ -45,6 +43,51 @@ globalvar evol;
 
 mvol = musicvolume;
 evol = effectvolume;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///get audio volume
+audio_sound_gain(snd_titlescreen_music, mvol, 1);
+audio_sound_gain(snd_selection, evol, 1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///play audio
+audio_play_sound (snd_titlescreen_music,1,1)
 </string>
           </argument>
         </arguments>

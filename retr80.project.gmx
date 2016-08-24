@@ -81,7 +81,6 @@
           <objects name="obj_credits_function">
             <object>objects\obj_b_credits</object>
             <object>objects\obj_credits_gif</object>
-            <object>objects\obj_exit_credits</object>
           </objects>
         </objects>
         <object>objects\obj_placeholder_room</object>
@@ -100,6 +99,7 @@
           <object>objects\obj_soundeffect_up</object>
           <object>objects\obj_soundeffect_down</object>
           <object>objects\obj_soundeffect_level</object>
+          <object>objects\obj_options_back</object>
         </objects>
       </objects>
       <object>objects\obj_newgame_gif</object>

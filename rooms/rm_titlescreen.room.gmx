@@ -11,17 +11,17 @@
   <colour>12615680</colour>
   <showcolour>-1</showcolour>
   <code>///save the audio settings
-if (mvol != musicvolume) &amp;&amp; (evol != effectvolume)
+ini_open('settings.ini');
+if ((mvol == musicvolume) &amp;&amp; (evol == effectvolume))
 {
-ini_open( 'settings.ini' );
-ini_write_real( 'options', 'musicvolume', mvol );
-ini_write_real( 'options', 'effectvolume', evol );
+ini_write_real( 'options', 'musicvolume', musicvolume );
+ini_write_real( 'options', 'effectvolume', effectvolume );
 }
-else
-{
-ini_write_real( 'options', 'musicvolume', musicvolume);
-ini_write_real( 'options', 'effectvolume', effectvolume);
-}
+    else
+    {
+    ini_write_real( 'options', 'musicvolume', mvol);
+    ini_write_real( 'options', 'effectvolume', evol);
+    }
 ini_close()</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
