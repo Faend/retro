@@ -56,8 +56,6 @@
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Presentation and Menus">
-      <background>background\selection_arrow</background>
-      <background>background\title</background>
       <background>background\bkg_title_screen</background>
     </backgrounds>
   </backgrounds>
