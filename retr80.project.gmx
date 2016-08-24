@@ -27,7 +27,6 @@
           <sprite>sprites\spr_quit_check</sprite>
           <sprite>sprites\spr_yes</sprite>
           <sprite>sprites\spr_no</sprite>
-          <sprite>sprites\spr_button_back</sprite>
         </sprites>
         <sprites name="Quit_Check">
           <sprite>sprites\spr_quitcheck</sprite>
