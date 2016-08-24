@@ -28,11 +28,6 @@
           <sprite>sprites\spr_yes</sprite>
           <sprite>sprites\spr_no</sprite>
         </sprites>
-        <sprites name="Quit_Check">
-          <sprite>sprites\spr_quitcheck</sprite>
-          <sprite>sprites\spr_quityes</sprite>
-          <sprite>sprites\spr_quitno</sprite>
-        </sprites>
         <sprites name="Credits">
           <sprite>sprites\spr_credits_gif</sprite>
         </sprites>
@@ -47,6 +42,11 @@
           <sprite>sprites\spr_volume_level2</sprite>
           <sprite>sprites\spr_volume_level1</sprite>
           <sprite>sprites\spr_volume_mute_on</sprite>
+          <sprite>sprites\spr_optionsback</sprite>
+          <sprite>sprites\spr_music_on</sprite>
+          <sprite>sprites\spr_music_off</sprite>
+          <sprite>sprites\spr_effect_on</sprite>
+          <sprite>sprites\spr_effect_off</sprite>
         </sprites>
         <sprite>sprites\spr_new_game_gif</sprite>
       </sprites>
@@ -100,6 +100,8 @@
           <object>objects\obj_soundeffect_down</object>
           <object>objects\obj_soundeffect_level</object>
           <object>objects\obj_options_back</object>
+          <object>objects\obj_music_on_off</object>
+          <object>objects\obj_effect_on_off</object>
         </objects>
       </objects>
       <object>objects\obj_newgame_gif</object>
