@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.effectvolume &lt;= 1)
+            <string>if (effectvolume &lt;= 1)
 {
-    audio_sound_gain(snd_selection, global.effectvolume, 0);
+    audio_sound_gain(snd_selection, effectvolume, 0);
 }
 </string>
           </argument>
@@ -51,13 +51,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.effectvolume &lt; 1)
+            <string>if (effectvolume &lt; 1)
 {
-global.effectvolume = global.effectvolume + 0.10;
+effectvolume = effectvolume + 0.10;
 }
 else
 {
-global.effectvolume = 1;
+effectvolume = 1;
 }
 </string>
           </argument>

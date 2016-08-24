@@ -25,16 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.musicvolume &lt;= 1)
+            <string>if (musicvolume &lt;= 1)
 {
-    sound_volume (snd_titlescreen_music, global.musicvolume)
+    sound_volume (snd_titlescreen_music, musicvolume)
 }
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="4">
+    <event eventtype="6" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -51,13 +51,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.musicvolume &gt; 0)
+            <string>if (musicvolume &gt; 0)
 {
-global.musicvolume = global.musicvolume - 0.10;
+musicvolume = musicvolume - 0.10;
 }
 else
 {
-global.musicvolume = 0;
+musicvolume = 0;
 }
 </string>
           </argument>
