@@ -8,6 +8,35 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>globalvar seffect_check;
+ini_open( 'settings.ini' );
+if ini_key_exists('options', 'effectvolume')
+{
+        seffect_check = ini_read_real( 'options', 'effectvolume', 1);
+}
+ini_close();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
@@ -25,16 +54,49 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Mute sound eff
-
+            <string>///sound eff on/off
 if (evol &gt; 0)
 {
-sound_volume(snd_selection,0);
-draw_sprite(spr_effect_off,0,x,y);
+evol = 0;
 }
-else if(evol = 0)
+
+else
+
 {
-sound_volume(snd_selection, evol)
+if (evol == 0)
+{
+evol = seffect_check;
+}
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (evol == 0)
+{
+draw_sprite(spr_effect_off,0,x,y)
+}
+else
+{
 draw_sprite(spr_effect_on,0,x,y);
 }
 </string>

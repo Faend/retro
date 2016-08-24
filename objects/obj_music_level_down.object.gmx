@@ -59,6 +59,10 @@ else
 {
 mvol = 0;
 }
+
+ini_open( 'settings.ini' );
+ini_write_real( 'options', 'musicvolume', mvol );
+ini_close();
 </string>
           </argument>
         </arguments>

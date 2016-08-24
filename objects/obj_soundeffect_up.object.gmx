@@ -59,6 +59,10 @@ else
 {
 evol = 1;
 }
+
+ini_open( 'settings.ini' );
+ini_write_real( 'options', 'effectvolume', evol );
+ini_close();
 </string>
           </argument>
         </arguments>
