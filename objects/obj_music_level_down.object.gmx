@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (musicvolume &lt;= 1)
+            <string>if (mvol &lt;= 1)
 {
-    sound_volume (snd_titlescreen_music, musicvolume)
+    sound_volume (snd_titlescreen_music, mvol)
 }
 </string>
           </argument>
@@ -51,13 +51,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (musicvolume &gt; 0)
+            <string>if (mvol &gt; 0)
 {
-musicvolume = musicvolume - 0.10;
+mvol = mvol - 0.10;
 }
 else
 {
-musicvolume = 0;
+mvol = 0;
 }
 </string>
           </argument>

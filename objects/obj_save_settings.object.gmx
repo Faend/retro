@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>globalvar mvol;
 globalvar evol;
+
+mvol = musicvolume;
+evol = effectvolume;
 </string>
           </argument>
         </arguments>
@@ -50,10 +53,13 @@ globalvar evol;
           <argument>
             <kind>1</kind>
             <string>///save the audio settings
+if (mvol != musicvolume) &amp;&amp; (evol != effectvolume)
+{
 ini_open( 'settings.ini' );
 ini_write_real( 'options', 'musicvolume', mvol );
 ini_write_real( 'options', 'effectvolume', evol );
 ini_close()
+}
 </string>
           </argument>
         </arguments>

@@ -8,6 +8,42 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="7" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///save the audio settings
+if (mvol != musicvolume) &amp;&amp; (evol != effectvolume)
+{
+ini_open( 'settings.ini' );
+ini_write_real( 'options', 'musicvolume', mvol );
+ini_write_real( 'options', 'effectvolume', evol );
+}
+else
+{
+ini_write_real( 'options', 'musicvolume', musicvolume);
+ini_write_real( 'options', 'effectvolume', effectvolume);
+}
+ini_close()
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="2">
       <action>
         <libid>1</libid>
@@ -35,6 +71,12 @@ musicvolume = ini_read_real( 'options', 'musicvolume', 1);
 effectvolume = ini_read_real( 'options', 'effectvolume', 1);
  
 ini_close();
+
+globalvar mvol;
+globalvar evol;
+
+mvol = musicvolume;
+evol = effectvolume;
 </string>
           </argument>
         </arguments>

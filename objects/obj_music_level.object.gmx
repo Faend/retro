@@ -25,17 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (musicvolume &lt;= 1) &amp;&amp; (musicvolume &gt;= 0.61)
+            <string>if (mvol &lt;= 1) &amp;&amp; (mvol &gt;= 0.61)
 { 
     draw_sprite (spr_volume_level3, 0, x, y);
 }
 
-if (musicvolume &lt;= 0.60) &amp;&amp; (musicvolume &gt;= 0.31)
+if (mvol &lt;= 0.60) &amp;&amp; (mvol &gt;= 0.31)
 {
     draw_sprite (spr_volume_level2, 0, x, y);
 }
 
-if (musicvolume &lt;= 0.30) &amp;&amp; (musicvolume &gt;= 0)
+if (mvol &lt;= 0.30) &amp;&amp; (mvol &gt;= 0)
 {
     draw_sprite (spr_volume_level1, 0, x, y);
 }
